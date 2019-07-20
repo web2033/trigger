@@ -1,0 +1,21 @@
+{
+  "name": "@web2033/trigger",
+  "version": "0.0.1",
+  "description": "Wrapper for Intersection Observer API (beta). For personal use.",
+  "main": "trigger.min.js",
+  "scripts": {
+    "build": "terser trigger.js --compress --mangle --output trigger.min.js"
+  },
+  "keywords": [
+    "trigger",
+    "aos",
+    "animation",
+    "intersection",
+    "observer",
+    "lazy",
+    "lazy-load",
+    "scroll"
+  ],
+  "author": "Eugene Kopich <github@web2033.com>",
+  "license": "MIT"
+}
