@@ -4,7 +4,7 @@
   "description": "Wrapper for Intersection Observer API (beta). For personal use.",
   "main": "trigger.min.js",
   "scripts": {
-    "build": "terser trigger.js --compress --mangle --output trigger.min.js"
+    "prepublishOnly": "terser trigger.js --compress --mangle --output trigger.min.js"
   },
   "keywords": [
     "trigger",

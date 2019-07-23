@@ -63,7 +63,7 @@ function trigger(params = {}) {
   /* Working with targets */
   nodes.forEach(node => {
     let targetIndexInStore = trigger.counter; // connect each node with its observer in store
-    instance.init(node); // hook to perform some inital actions
+    instance.init(node); // hook to perform some initial actions
     trigger.observer[trigger.counter] = new IntersectionObserver(
       entry => {
         if (entry[0].intersectionRatio >= threshold) {
