@@ -1,6 +1,6 @@
 {
   "name": "@web2033/trigger",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Wrapper for Intersection Observer API (beta). For personal use.",
   "main": "trigger.min.js",
   "scripts": {
