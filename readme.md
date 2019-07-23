@@ -1,10 +1,18 @@
-# Wrapper for Intersection Observer API
+## Wrapper for Intersection Observer API
+
+```sh
+npm i @web2033/trigger
+```
+
+```sh
+import trigger from '@web2033/trigger';
+```
 
 ```js
 trigger ({
     targets: false, // required, @string with one or several targets separated by comma
     init() {}, // optionally, run a @fn on a node before attaching observer to it
-    action() {}, // required, @fn
+    action() {}, // required, @fn, triggered only once per node
     root: null, // ancestor of the target. Defaults to the browser viewport if not specified or if null.
     mt: '0px',
     mr: '0px',
@@ -15,7 +23,7 @@ trigger ({
   });
 ```
 
-### Example: lazy-load images
+#### Example: lazy-load images
 
 ```html
 <img data-src="https://web2033.com/cdn/jpg/w/fashion/62-1080w.jpg" alt="">
@@ -31,7 +39,7 @@ trigger({
 });
 ```
 
-### Example: Run animation when element is visible (anime.js in this case)
+#### Example: Trigger animation when element enters viewport (anime.js in this case)
 
 ```js
 /* Triggers for reveal animation */
