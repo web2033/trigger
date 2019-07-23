@@ -6,7 +6,7 @@ Recommended to use polyfill for IntersectionObserver (include it before trigger.
 https://caniuse.com/#feat=intersectionobserver / July 13, 2019 - support 87.85%
 */
 
-function trigger(params = {}) {
+module.exports = function trigger(params = {}) {
   const defaultInstanceSettings = {
     targets: false, // required, @string with one or several targets separated by comma
     init() {}, // optionally, run a @fn on a node before attaching observer to it
@@ -82,9 +82,7 @@ function trigger(params = {}) {
     trigger.observer[trigger.counter].observe(node);
     trigger.counter++;
   });
-}
+};
 
 trigger.observer = []; // store for observers
 trigger.counter = 0; // keeping track of observers being added to the store
-
-export default trigger;
