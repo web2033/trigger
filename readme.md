@@ -8,10 +8,9 @@ npm i @web2033/trigger
 import trigger from '@web2033/trigger';
 ```
 
-#### Usage:
+#### Options and their defaults:
 
 ```js
-/* options and their defaults */
 trigger ({
     targets: false, // required @string; selector, the same as for querySelectorAll(selector)
     action() {}, // required @fn; accepts "node" as an argument, triggered once per node
@@ -25,10 +24,6 @@ trigger ({
     t: Number.MIN_VALUE // threshold, between 0 and 1
   });
 ```
-
-#### Docs:
-
-https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 
 #### Example: lazy-load images
 
@@ -74,3 +69,7 @@ trigger({
   }
 });
 ```
+
+**API Docs:** https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+
+**Polyfill:** https://github.com/w3c/IntersectionObserver/tree/master/polyfill
