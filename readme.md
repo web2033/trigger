@@ -70,6 +70,8 @@ trigger({
 });
 ```
 
+**CDN (min)** https://web2033.com/cdn/js/trigger/trigger.min.js
+
 **API Docs:** https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 
 **Polyfill:** https://github.com/w3c/IntersectionObserver/tree/master/polyfill
