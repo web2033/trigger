@@ -4,24 +4,31 @@
 npm i @web2033/trigger
 ```
 
-```sh
+```js
 import trigger from '@web2033/trigger';
 ```
 
+#### Usage:
+
 ```js
+/* options and their defaults */
 trigger ({
-    targets: false, // required, @string with one or several targets separated by comma
+    targets: false, // required @string; selector, the same as for querySelectorAll(selector)
+    action() {}, // required @fn; accepts "node" as an argument, triggered once per node
     init() {}, // optionally, run a @fn on a node before attaching observer to it
-    action() {}, // required, @fn, triggered only once per node
     root: null, // ancestor of the target. Defaults to the browser viewport if not specified or if null.
-    mt: '0px',
-    mr: '0px',
-    mb: '0px',
-    ml: '0px',
-    margin: false, // if set, then "mt, mr, mb, ml" are ignored
+    mt: '0px', // margin-top
+    mr: '0px', // margin-right
+    mb: '0px', // margin-bottom
+    ml: '0px', // margin-left
+    margin: false, // shorthand for margings above; if set, then "mt, mr, mb, ml" are ignored
     t: Number.MIN_VALUE // threshold, between 0 and 1
   });
 ```
+
+#### Docs:
+
+https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 
 #### Example: lazy-load images
 
