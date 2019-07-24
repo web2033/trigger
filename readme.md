@@ -21,7 +21,7 @@ trigger ({
     mr: '0px', // margin-right
     mb: '0px', // margin-bottom
     ml: '0px', // margin-left
-    margin: false, // shorthand for margings above; if set, then "mt, mr, mb, ml" are ignored
+    margin: false, // shorthand for margins above; if set, then "mt, mr, mb, ml" are ignored
     t: Number.MIN_VALUE // threshold, between 0 and 1
   });
 ```
