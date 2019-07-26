@@ -1,5 +1,7 @@
 ## Wrapper for Intersection Observer API
 
+> Easy way to lazy-load images, trigger animation or run javascript function.
+
 ```sh
 npm i @web2033/trigger
 ```
