@@ -75,3 +75,7 @@ trigger({
 **API Docs:** https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 
 **Polyfill:** https://github.com/w3c/IntersectionObserver/tree/master/polyfill
+
+---
+
+[MIT License](license.md) | © 2019 | [Eugene Kopich](https://eugenekopich.com)
