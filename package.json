@@ -1,6 +1,7 @@
 {
   "name": "@web2033/trigger",
-  "version": "1.1.5",
+  "version": "1.1.6",
+  "type": "module",
   "description": "Wrapper for Intersection Observer API. Easy way to lazy-load images, trigger animation or run javascript function.",
   "main": "trigger.js",
   "scripts": {
