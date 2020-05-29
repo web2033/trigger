@@ -72,6 +72,16 @@ trigger({
 });
 ```
 
+#### Using in Nuxt.js
+
+Add to `nuxt.config.js`:
+
+```js
+  build: {
+    transpile: ["@web2033/trigger"]
+  }
+```
+
 **CDN (min)** https://web2033.com/cdn/js/trigger/trigger.min.js
 
 **API Docs:** https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
